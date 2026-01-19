@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Fondo gris (sin imagen) */
+body {
+  background-color: #bfbfbf; /* gris similar a tu captura */
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Desactivamos overlay porque ya no hay imagen detrás */
+body::before {
+  content: "";
+  display: none;
+}
+
+/* Todo el contenido en primer plano */
+main,
+.container,
+.card,
+.panel-white {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 16px;
+}
+
+/* Paneles blancos (saldo / movimientos) */
+.panel-white {
+  background: rgba(255, 255, 255, 0.96);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* Lista de movimientos */
+.list-group-item {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+/* Botones */
+.btn {
+  border-radius: 10px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
